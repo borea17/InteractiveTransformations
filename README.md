@@ -1,36 +1,16 @@
-# Python environment with a requirements.txt
+# Interactive Transformations
 
-[![Binder](http://mybinder.org/badge_logo.svg)](http://mybinder.org/v2/gh/binder-examples/requirements/master)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/borea17/InteractiveTransformations/master)
 
-A Binder-compatible repo with a `requirements.txt` file.
+Jupyter notebooks containing interactive transformation visualizations using plotly and ipywidgets.
 
-Access this Binder at the following URL
+## Demos
 
-http://mybinder.org/v2/gh/binder-examples/requirements/master
+**01_Affine_Transformation.ipynb**
+  <img src='demo/affine_transform.gif' width='800' height='512'>
 
-## Notes
-The `requirements.txt` file should list all Python libraries that your notebooks
-depend on, and they will be installed using:
+**02_Attention_Transformation.ipynb**
+  <img src='demo/attention_transform.gif' width='800' height='532'>
 
-```
-pip install -r requirements.txt
-```
-
-The base Binder image contains no extra dependencies, so be as
-explicit as possible in defining the packages that you need. This includes
-specifying explicit versions wherever possible.
-
-If you do specify strict versions, it is important to do so for *all*
-your dependencies, not just direct dependencies.
-Strictly specifying only some dependencies is a recipe for environments
-breaking over time.
-
-[pip-compile](https://github.com/jazzband/pip-tools/) is a handy
-tool for combining loosely specified dependencies with a fully frozen environment.
-You write a requirements.in with just the dependencies you need
-and pip-compile will generate a requirements.txt with all the strict packages and versions that would come from installing that package right now.
-That way, you only need to specify what you actually know you need,
-but you also get a snapshot of your environment.
-
-In this example we include the library `seaborn` which will be installed in
-the environment, and our notebook uses it to plot a figure.
+**03_Projective_Transformation.ipynb**
+  <img src='demo/projective_transform.gif' width='800' height='548'>
